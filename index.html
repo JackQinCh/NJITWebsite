@@ -1,36 +1,425 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-	<title>Jack Qin</title>
-	<link rel="stylesheet" type="text/css" href="my.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Zhonghua Qin's Blog</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<link href="css/my.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<br>
-		<img id="idPhoto" src="image/Zhonghua Qin.jpg" height="1200" width="1200" alt="Zhonghua Qin">
-
-		<h2 id="authorName">Zhonghua Qin</h2>
-		<address>
-			2015 Fall<br>
-			Software Engineering<br>
-			(862)371-4144<br>
-			zq42@njit.edu<br>
-		</address>
-	</header>
-
-	<nav>
-		<a href="index.html">Home</a>
-	</nav>
-
-	<section>
-		<h2>Couses</h2>
-		<ul>
-			<li><a href="CS602.html">CS602</a></li>
+<header>
+	<img id="idPhoto" src="images/Zhonghua Qin.jpg" height="1200" width="1200" alt="Zhonghua Qin">
+	<h2>Zhonghua Qin</h2>
+	<address>
+		2015 Fall<br>
+		Software Engineering<br>
+		(862)371-4144<br>
+		zq42@njit.edu<br>
+	</address>
+</header>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="navbar-header">
+		<a class="navbar-brand">Zhonghua Qin</a>
+	</div>
+	<div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">HOME</a></li>
+			<li><a href="#">ABOUT</a></li>
 		</ul>
-	</section>
-	
-	<footer>
-		Copyright &copy Zhonghua Qin
-	</footer>
+	</div>
+</nav>
+
+<section>
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseOne">
+						1. Chapter 03
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<h2>Time Sheet</h2>
+					<table style="width:100%">
+						<caption>Time Sheet</caption>
+						<tr>
+							<th colspan="4">Zhonghua Qin</th>
+						</tr>
+						<tr>
+							<th>Date</th>
+							<th>Time</th>
+							<th>Task</th>
+							<th>Time Spent(hrs)</th>
+						</tr>
+						<tr>
+							<td>15-Spt-2015</td>
+							<td>9:00AM</td>
+							<td>Read Text and Lecture</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<td>15-Spt-2015</td>
+							<td>2:00PM</td>
+							<td>Plan Code</td>
+							<td>0.5</td>
+						</tr>
+						<tr>
+							<td>15-Spt-2015</td>
+							<td>2:30PM</td>
+							<td>Write Java Code</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<td>16-Spt-2015</td>
+							<td>9:00AM</td>
+							<td>Write HTML and Applet Container</td>
+							<td>1.5</td>
+						</tr>
+						<tr>
+							<td>17-Spt-2015</td>
+							<td>9:00AM</td>
+							<td>Write Java Application</td>
+							<td>2.0</td>
+						</tr>
+						<tr>
+							<td>18-Spt-2015</td>
+							<td>10:00AM</td>
+							<td>Post Up Screen Shoot of Application</td>
+							<td>0.5</td>
+						</tr>
+						<tr>
+							<th colspan="3">Total Time Spent(hrs)</th>
+							<td>6.5</td>
+						</tr>
+					</table>
+
+					<h2>Applet</h2>
+					<applet code="applets/HelloWorldApplet.class" width="431" height="620">Hello World Applet</applet>
+					<h2>Application Screen Shoot</h2>
+					<img src="images/Screen%20Shot%202015-09-18%20at%2011.18.38.png" height="400" width="400">
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseTwo">
+						2. Chapter 5a
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h1>Chapter 5a</h1>
+					<h2>Time Sheet</h2>
+					<table style="width:100%">
+						<caption>Time Sheet</caption>
+						<tr>
+							<th colspan="4">Zhonghua Qin</th>
+						</tr>
+						<tr>
+							<th>Date</th>
+							<th>Time</th>
+							<th>Task</th>
+							<th>Time Spent(hrs)</th>
+						</tr>
+						<tr>
+							<td>29-Spt-2015</td>
+							<td>9:00AM</td>
+							<td>Read Text and Lecture</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<td>29-Spt-2015</td>
+							<td>2:00PM</td>
+							<td>Plan Code</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<td>30-Spt-2015</td>
+							<td>2:00PM</td>
+							<td>Write Java Code</td>
+							<td>3.0</td>
+						</tr>
+						<tr>
+							<td>02-Oct-2015</td>
+							<td>9:00AM</td>
+							<td>Write Java Code</td>
+							<td>3.0</td>
+						</tr>
+						<tr>
+							<td>02-Oct-2015</td>
+							<td>4:00PM</td>
+							<td>Write Java Application</td>
+							<td>2.0</td>
+						</tr>
+						<tr>
+							<td>06-Oct-2015</td>
+							<td>9:00AM</td>
+							<td>Write Document</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<th colspan="3">Total Time Spent(hrs)</th>
+							<td>11.0</td>
+						</tr>
+					</table>
+
+					<h2>Applet</h2>
+					<applet code="applets/Jack/MyCalendar.class" archive="CH5aApplet.jar" width="400" height="400">My Calendar Applet</applet>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseThree">
+						3. Chapter 5b
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h3>The <a href="jdocs/ch5b/index.html">Javadocs</a> of my application.</h3>
+					<h3>The jar of my <a href="applets/Ch5bApp.jar">Application</a>.</h3>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseFour">
+						4. Chapter 6
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFour" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h3>The <a href="jdocs/Ch6/index.html">Javadocs</a> of my application.</h3>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseFive">
+						5. Chapter 7
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFive" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h2>Compare Speeds</h2>
+					<center>
+						<div>
+							<strong>ZhonghuaInsertion</strong>
+							<br>
+							<applet code="Zhonghua/Ch7Sort.class" archive="applets/Ch7-Sort.jar" width=150 height=100>
+								<param name="alg" value="ZhonghuaInsertion">
+								<param name="dis" value="ZhonghuaBRL">
+							</applet>
+						</div>
+
+						<div>
+							<strong>ZhonghuaSelection</strong>
+							<br>
+							<applet code="Zhonghua/Ch7Sort.class" archive="applets/Ch7-Sort.jar" width=150 height=100>
+								<param name="alg" value="ZhonghuaSelection">
+								<param name="dis" value="ZhonghuaBRL">
+							</applet>
+						</div>
+
+						<div>
+							<strong>ZhonghuaShell</strong>
+							<br>
+							<applet code="Zhonghua/Ch7Sort.class" archive="applets/Ch7-Sort.jar" width=150 height=100>
+								<param name="alg" value="ZhonghuaShell">
+								<param name="dis" value="ZhonghuaBRL">
+							</applet>
+						</div>
+					</center>
+					<br>
+
+					<h2>Three displays</h2>
+					<center>
+						<div>
+							<strong>ZhonghuaBRL</strong>
+							<br>
+							<applet code="Zhonghua/Ch7Sort.class" archive="applets/Ch7-Sort.jar" width=150 height=100>
+								<param name="alg" value="ZhonghuaInsertion">
+								<param name="dis" value="ZhonghuaBRL">
+							</applet>
+						</div>
+
+						<div>
+							<strong>ZhonghuaVRL</strong>
+							<br>
+							<applet code="Zhonghua/Ch7Sort.class" archive="applets/Ch7-Sort.jar" width=150 height=100>
+								<param name="alg" value="ZhonghuaInsertion">
+								<param name="dis" value="ZhonghuaVRL">
+							</applet>
+						</div>
+
+						<div>
+							<strong>ZhonghuaBarRL</strong>
+							<br>
+							<applet code="Zhonghua/Ch7Sort.class" archive="applets/Ch7-Sort.jar" width=150 height=100>
+								<param name="alg" value="ZhonghuaInsertion">
+								<param name="dis" value="ZhonghuaBarRL">
+							</applet>
+						</div>
+						<br>
+					</center>
+					<h3>The <a href="jdocs/Ch7/index.html">Javadocs</a> of my application.</h3>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseSix">
+						6. Chapter 8
+					</a>
+				</h4>
+			</div>
+			<div id="collapseSix" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h2>Exersice8.4 Calculator</h2>
+					<applet code="Zhonghua/Calculator.class" archive="applets/Ch8_8.4_Calculator.jar" width=500 height=400>
+						Calculator Applet
+					</applet>
+					<h3>The <a href="jdocs/Ch8Calculator/index.html">Javadocs</a> of Exersice8.4 Calculator.</h3>
+					<h2>Exersice8.7 Compression</h2>
+					<h3>Here is the <a href="applets/Compression-1.0-SNAPSHOT.jar">Jar</a> of Exersice8.7 Compression.</h3>
+					<h3>The <a href="jdocs/Ch8Compression/index.html">Javadocs</a> of Exersice8.7 Compression.</h3>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseSeven">
+						7. Chapter 9
+					</a>
+				</h4>
+			</div>
+			<div id="collapseSeven" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h2>Drawing Pad</h2>
+					<h3>The <a href="jdocs/Ch9/index.html">Javadocs</a>.</h3>
+					<h2>Exercise 8.7 Compression</h2>
+					<h3>Here is the <a href="applets/Ch9DrawingPad.jar">Jar</a>.</h3>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseEight">
+						8. Chapter 10
+					</a>
+				</h4>
+			</div>
+			<div id="collapseEight" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h1>Chapter 10</h1>
+					<h2>Maze Game</h2>
+
+					<h3>The <a href="jdocs/Ch10/index.html">Javadocs</a>.</h3>
+					<h3>Here is the <a href="applets/MazeGame.jar">Jar</a>.</h3>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseNine">
+						9. Midterm
+					</a>
+				</h4>
+			</div>
+			<div id="collapseNine" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h1>Midterm</h1>
+					<applet code="Zhonghua/MidtermThermostatController.class" archive="applets/Midterm-ThermostatController.jar" width="600" height="700">My Calendar Applet</applet>
+					<h3>The <a href="jdocs/Midterm/index.html">Javadocs</a> of my application.</h3>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseTen">
+						10. FinalProject
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTen" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h2>Sokoban</h2>
+					<applet code="Zhonghua/SokobanApplet.class" archive="Sokoban.jar" width=330 height=370>
+					</applet>
+					<h3>The PDF is <a href="docs/Final_Project_ZhonghuaQin.pdf">here</a>.</h3>
+					<h3>The Jar is <a href="applets/Sokoban.jar">here</a>.</h3>
+					<h3>The Javadocs is <a href="jdocs/FinalProject/index.html">here</a>.</h3>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+					   href="#collapseEleven">
+						11. Final
+					</a>
+				</h4>
+			</div>
+			<div id="collapseEleven" class="panel-collapse collapse">
+				<div class="panel-body">
+					<h2>Monday job</h2>
+						<applet code="Zhonghua/Main.class" archive="applets/CropDuster.jar" width=1000 height=600>
+						</applet>
+					<h3>The Jar is <a href="applets/CropDuster.jar">here</a>.</h3>
+
+					<h3>The Javadocs is <a href="jdocs/Final/index.html">here</a>.</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="panel-footer">
+	Copyright &copy Zhonghua Qin
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
